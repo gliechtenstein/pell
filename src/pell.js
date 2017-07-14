@@ -115,7 +115,7 @@ export const init = settings => {
 
   settings.classes = { ...defaultSettings.classes, ...settings.classes }
 
-  const root = typeof settings.root instanceof HTMLElement ? settings.root : document.getElementById(settings.root)
+  const root = settings.root instanceof HTMLElement ? settings.root : document.getElementById(settings.root)
 
   const actionbar = document.createElement('div')
   actionbar.className = settings.classes.actionbar
